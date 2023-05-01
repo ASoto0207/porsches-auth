@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <title>Porsche Lovers</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+  <div class="row">
+
+      <!-- LOCAL INFORMATION -->
+      <div class="col-sm-6">
+      </div>
+      <div class="col-sm-6">
+        <h3>Messages</h3>
+        <ul class="messages">
+        <% for(var i=0; i<messages.length; i++) {%>
+          <li class="message">
+            <span><%= messages[i].name %></span>
+            <span><%= messages[i].msg %></span>
+            <span><%= messages[i].thumbUp %></span>
+            <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+            <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+            <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+          </li>
+        <% } %>
+        </ul>
+
+     
+
+</div>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="porscheMan"></span>Porsche Options</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+    <div class="porsche-display">
+     <img  class="porsche-image" id="p1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcimg1.ibsrv.net%2Fgimg%2Frennlist.com-vbulletin%2F2000x1504%2Fimg_0089_e73da898192eb06cb48bd2da11bee8d42cd53600.jpg&f=1&nofb=1&ipt=75157bed9d9de0612c703df25aab9029a19fa0d71f6a3c6658dbf35fe0082147&ipo=images"> 
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+     <img class="porsche-image" id="p2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frmsothebys-cache.azureedge.net%2F3%2Fb%2F5%2F0%2Fb%2Fb%2F3b50bb21f71dfca3881ce210d1e0a9cea07b966e.jpg&f=1&nofb=1&ipt=7bba00074be27c6bb568c1079a96a6800eb855d0729fb00daac6726afc6dbed0&ipo=images">
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+     <img class="porsche-image" id="p3" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bjmotors.biz%2Fimagetag%2F13412%2F44%2Fl%2FUsed-2019-Porsche-911-GT3-RS.jpg&f=1&nofb=1&ipt=9e0e660032bf82e0842a3feec1d90f024a1b5c880c8f3c89d6770b5b9eb9f8fa&ipo=images">
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+     <img class="porsche-image" id="p4" src="https://hips.hearstapps.com/hmg-prod/images/2022-porsche-911-gt3-pdk-36-1618931369.jpg?crop=0.753xw:0.635xh;0.0785xw,0.296xh&resize=1200:*">
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+     <img class="porsche-image" id="p5" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.barrett-jackson.com%2Fstaging%2Fcarlist%2Fitems%2FFullsize%2FCars%2F75614%2F75614_Side_Profile_Web.jpg&f=1&nofb=1&ipt=21a1614e4183bc75feb14f3d2e9b4b1cb95bdf4e26474ba40232b11275b194e2&ipo=images">
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+     <img class="porsche-image" id="p6" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.LCXdLzzPtDCMhHG5P0lN7AHaE8%26pid%3DApi&f=1&ipt=f47b50ae85b4ff8eba85b4c5faccc5f432ea4a8fc63debbb986020ace0344a59&ipo=images',
+    },">
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+     <img class="porsche-image" id="p7" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dealeraccelerate.com%2Fcanepa%2F3%2F204%2F48614%2F790x1024%2F1979-porsche-911-turbo&f=1&nofb=1&ipt=34f773a40984107deba4b9277e6068c99dd017c4deb4a5958d95af5cc9cf90be&ipo=images">
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+     <img class="porsche-image" id="p8" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs1.cdn.autoevolution.com%2Fimages%2Fgallery%2FPORSCHE-Cayman-GT4--981C--5691_13.jpg&f=1&nofb=1&ipt=cf86182f17ce05cf207f7550b169cc26f593cb529627ec9be5e2102e19b34ac9&ipo=images">
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+     <img class="porsche-image" id="p9" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbringatrailer.com%2Fwp-content%2Fuploads%2F2019%2F03%2F2011_porsche_boxster_spyder_15531938033f53ab7bdfIMG_20190316_145756.jpg&f=1&nofb=1&ipt=14fd4c0a7be3a5443081391f012780a0f3afa217ca61ba1a678c1ab8e929f2e9&ipo=images">
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+     <img class="porsche-image" id="p10" src=""> 
+     <p>Leave a review</p>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input type="text"  name="name">
+            <input type="text" placeholder="message" name="msg">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+  </div>
+  <div id="porsche-details"></div>
+
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
